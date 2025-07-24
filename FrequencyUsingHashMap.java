@@ -6,6 +6,9 @@ public class FrequencyUsingHashMap {
             map.put(num, map.getOrDefault(num, 0)+1);
         }
         System.out.println(map);
+        for(Map.Entry<Integer, Integer> entry :map.entrySet()) {
+            System.out.println(entry);
+        }
     }
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
